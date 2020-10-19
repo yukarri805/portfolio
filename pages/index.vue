@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Yukari Miyasaka's Portfolio</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li>works<span class="small">-制作物-</span></li>
-        <li>skills<span class="small">-できること-</span></li>
-        <li>profile<span class="small">-自己紹介-</span></li>
-      </ul>
-    </nav>
-  </header>
-
+<template>
+<div>
   <div class="kv">
     <img src="" alt="メイン画像">
   </div>
@@ -155,19 +138,60 @@
 
     <p>メモ：githubやebook触ったこともいれる？？</p>
 
-    </div>
   </section>
+</div>
+</template>
 
-  <section id="profile">
+<script>
+export default {
+  head () {
+    return {
+      title: "Yukari Miyasaka's Portfolio",
+      meta: [
+        { hid: 'description', name: 'description', content: '宮坂友香里のポートフォリオです。' }
+      ]
+    }
+  }
+}
+</script>
 
-    <div class="profile-flex-box">
+<style>
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.title {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
 
-    </div>
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
 
-
-  </section>
-
-</body>
-
-</html>
+.links {
+  padding-top: 15px;
+}
+</style>
