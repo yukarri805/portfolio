@@ -1,17 +1,40 @@
 <template>
   <header>
-    <nav>
-      <ul>
-        <li>works<span class="small">-制作物-</span></li>
-        <li>skills<span class="small">-できること-</span></li>
-        <li>profile<span class="small">-自己紹介-</span></li>
-      </ul>
+    <nav id="gnav">
+      <div class="nav-box">
+        <h1 class="logo">Miyasaka yukari</h1>
+        <ul class="pc-menu">
+          <li class="pc-nav">works</li>
+          <li class="pc-nav">skills</li>
+          <li class="pc-nav">profile</li>
+        </ul>
+      </div>
     </nav>
   </header>
 </template>
 
 <script>
+export default {
+  name: 'Header'
+}
 </script>
 
 <style scoped>
+.nav-box {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  height: 80px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.nav-box ul {
+  display: flex;
+  align-items: center;
+}
+.nav-box li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
 </style>
