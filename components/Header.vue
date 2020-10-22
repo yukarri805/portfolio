@@ -2,11 +2,11 @@
   <header>
     <nav id="gnav">
       <div class="nav-box">
-        <h1 class="logo">yukari</h1>
+        <h1 class="logo"><span>Portfolio</span><br>yukari</h1>
         <ul class="pc-menu">
-          <li class="pc-nav">works</li>
-          <li class="pc-nav">skills</li>
-          <li class="pc-nav">profile</li>
+          <li class="pc-nav"><nuxt-link v-scroll-to="'#works'"to>works</nuxt-link></li>
+          <li class="pc-nav"><nuxt-link v-scroll-to="'#skills'"to>skills</nuxt-link></li>
+          <li class="pc-nav"><nuxt-link v-scroll-to="'#profile'"to>profile</nuxt-link></li>
         </ul>
       </div>
     </nav>
@@ -20,6 +20,17 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 4.3px;
+}
+h1 span {
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
 .nav-box {
   top: 0;
   display: flex;

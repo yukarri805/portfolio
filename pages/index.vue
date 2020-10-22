@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="kv">
-      <img src="" alt="メイン画像">
+      <img src="@/assets/images/main.jpg" alt="メイン画像" style="width:100%">
     </div>
 
   <section class="us">
@@ -65,6 +65,7 @@
         </div>
       </div>
     </div>
+    <!-- https://qiita.com/TK-C/items/82443d1d85f2e3bb24a5 これ入れたいな -->
   </section>
 
   <section id="skills">
@@ -154,6 +155,12 @@
     </div>
   </section>
 
+  <section id="profile">
+    <div class="container">
+      <h2 class="title">Profile</h2>
+    </div>
+  </section>
+
 </div>
 </template>
 
@@ -209,6 +216,7 @@ export default {
   text-align: center;
   letter-spacing: 0.1rem;
   font-size: 10px;
+  margin-top: 3%;
 }
 .topWorks-hov:hover {
   background-color: rgba(255,255,255,0.9);
