@@ -27,34 +27,42 @@
       <div class="works-flex-box">
 
         <div class="works-item">
-          <div class="syousai">
+          <div class="modal">
             <img src="@/assets/images/work-01.png">
             <div class="topWorks-hov">
-              <div class="topWorks-menu">
+              <div class="topWorks-exp">
                 <p class="title">新規LP</p>
                 <p class="naiyo">制作期間：約１ヶ月　(2020年４月ごろ）<br>
-                   制作担当　：　コーディング</p>
+                   制作担当　：　コーディング
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div class="works-item">
-          <div class="syousai">
+          <div class="modal">
             <img src="@/assets/images/work-02.png">
             <div class="topWorks-hov">
-              <p class="topWorks-menu">制作物の説明</p>
+              <div class="topWorks-exp">
+                <p class="title">新規開発プロジェクト</p>
+                <p class="naiyo">制作期間：約１ヶ月　(2020年２月ごろ）<br>
+                   制作担当　：　下層ページ２p コーディング、テスト</p>
+              </div>
             </div>
           </div>
         </div>
         <div class="works-item">
-          <div class="syousai">
+          <div class="modal">
             <img src="@/assets/images/work-03.png">
             <div class="topWorks-hov">
-              <p class="topWorks-menu">制作物の説明</p>
+              <div class="topWorks-exp">
+                <p class="title">新規システムプロジェクト</p>
+                <p class="naiyo">制作期間：約　ヶ月(2020年7月ごろ）<br>
+                   制作担当　：　下層ページ１pコーディング、テスト</p>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -163,6 +171,7 @@ export default {
 </script>
 
 <style>
+/* --- works --- */
 .works-flex-box {
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +183,7 @@ export default {
   width: 32%;
   margin-bottom: 18px;
 }
-.syousai img {
+.modal img {
   vertical-align: bottom;
   max-width: 100%;
   height: auto;
@@ -188,27 +197,25 @@ export default {
   transition: all .2s;
   color: transparent;
 }
-.topWorks-menu p.title {
+.topWorks-exp p.title {
   display: block;
   margin-top: 10%;
   text-align: center;
   font-family: 'Unna', serif;
   letter-spacing: 0.3rem;
-  font-size: 22px;
+  font-size: 20px;
 }
-.topWorks-menu p.naiyo {
+.topWorks-exp p.naiyo {
   text-align: center;
   letter-spacing: 0.1rem;
-    font-size: 10px;
-
+  font-size: 10px;
 }
-
 .topWorks-hov:hover {
   background-color: rgba(255,255,255,0.9);
   color: #333;
   cursor: pointer;
 }
-/* --- slill --- */
+/* --- skill --- */
 .skills-flex-box {
   display: flex;
   flex-wrap: wrap;

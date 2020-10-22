@@ -144,9 +144,11 @@ h2 {
 }
 h3 {
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1;
   font-family: 'Unna', serif;
   margin-bottom: 2rem;
+  border-left: 5px solid #81b1da;
+  padding-left: 3px;
 }
 small{
   display: inline-block;

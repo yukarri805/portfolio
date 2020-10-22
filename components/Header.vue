@@ -2,7 +2,7 @@
   <header>
     <nav id="gnav">
       <div class="nav-box">
-        <h1 class="logo">Miyasaka yukari</h1>
+        <h1 class="logo">yukari</h1>
         <ul class="pc-menu">
           <li class="pc-nav">works</li>
           <li class="pc-nav">skills</li>
@@ -36,5 +36,10 @@ export default {
 .nav-box li {
   display: list-item;
   text-align: -webkit-match-parent;
+  font-size: 15px;
+  height: 50px;
+  margin: 0 1.3rem;
+  letter-spacing: 0.12rem;
+  line-height: 50px;
 }
 </style>
